@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.effect {
+    width: 650px;
+    height: 550px;
+    padding: 1px;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.effect::before {
+    background: repeating-conic-gradient(
+        white 0deg 10deg,
+        dodgerblue 10deg 20deg,
+        white 20deg 30deg,
+        blue 30deg 40deg,
+        white 40deg 50deg
+    );
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250%;
+    height: 250%;
+    content: "";
+    transform: translate(-50%, -50%);
+    filter: blur(5px);
+    animation: for_lazer 19s linear infinite;
+}
+
+@keyframes for_lazer {
+    to {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    z-index: 987 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 55px;
+    gap: 50px;
+}
+
+.panel > h3 {
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+* {
+    font-family: Brimula;
+}
+
+@font-face {
+    font-family: Brimula;
+    src: url("Brimula.otf");
+}
+
+.panel > input {
+    padding: 12px 15px;
+    border: 1px solid #808080a0;
+    width: 100%;
+    font-size: 21px;
+    letter-spacing: 2px;
+}
+
+.all {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#download_btn {
+    display: none;
+}
+
+.all > button {
+    background: #164574;
+    padding: 10px 35px;
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+#resultat {    
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+

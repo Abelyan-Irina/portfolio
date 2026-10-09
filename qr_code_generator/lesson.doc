@@ -1,0 +1,22 @@
+Ինչպես Պատրաստել QR Կոդ,
+
+1ին Մեզ Պետկ է Կայք,
+Որը Կփնտրի Qr_ների Ներսում > Մեր Նշած Qr_ին,
+
+Եթե Չգտնի > Կպատրաստի Նորին,
+Եթե Գտնի  > Կտա նրան Մեզ;
+
+Տվյալ Կայքերից > http://www.example.com,
+
+Երբ Դադարի Կայքը Գործել > Փոխարինել Նրան Մեկ Ուրիշով;
+
+Տեռմինալի Անհրաժեշտ Կոդեր,
+npm init -y
+npm install express
+npm install qrcode
+type null > index.html
+type null > style.css
+type null > script.js
+type null > index.js
+
+
